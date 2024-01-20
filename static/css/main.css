@@ -1,5 +1,21 @@
 body{
     margin :0;
     font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
-    
+
+}
+
+
+table {
+    border-collapse: collapse; /* Collapse borders into a single border */
+    width: 100%;
+}
+
+th, td {
+    border: 1px solid #ddd; /* 1px solid border with a light gray color */
+    padding: 8px; /* Add padding for better appearance */
+    text-align: left;
+}
+
+th {
+    background-color: #f2f2f2; /* Add a background color to header cells */
 }
