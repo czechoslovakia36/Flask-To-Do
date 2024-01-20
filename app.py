@@ -7,6 +7,9 @@ app= Flask(__name__)
 app.config['SQLALCHEMY_DATABASE_URI']='sqlite:///test.db'
 db=SQLAlchemy(app)
 
+# Pushing application context manually :
+app.app_context().push()
+
 
 class Todo(db.Model):
     id= db.Column(db.Integer,primary_key=True)
