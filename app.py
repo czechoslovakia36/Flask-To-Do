@@ -15,7 +15,8 @@ class Todo(db.Model):
 
 
     def __repr__(self) -> str:
-        return '<Task %r>' % self.id
+        # return '<Task %r>' % self.id
+        return f"<Task {self.id}"
 
 
 '''
