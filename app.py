@@ -14,6 +14,10 @@ class Todo(db.Model):
     date_created= db.Column(db.DateTime,default=datetime.utcnow)
 
 
+    def __repr__(self) -> str:
+        return '<Task %r>' % self.id
+
+
 '''
 /// --->Relative path 
 ////--->Absolute path
